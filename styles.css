@@ -18,3 +18,6 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
   width: 100px;
   margin-bottom: -50px;
 }
+label{
+  margin-bottom: 5px;
+}
