@@ -61,7 +61,7 @@ cityForm.addEventListener("submit", (e) => {
 
 
 //forecast api
-const key = "W21dolBVLOiMd59p10y5YhWHrFwzs73W";
+const key = "RpEuZh5DzEaXzvJAVflQaZyyARww0NwG";
 
 // get weather information
 const getWeather = async (id) => {
