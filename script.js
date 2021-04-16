@@ -24,7 +24,7 @@ const iconSrc = `img/icons/${weather.WeatherIcon}.svg`
 icon.setAttribute("src", iconSrc);
 
 //update image
-let timeSrc = weather.IsDayTime ? "./img/day.svg" : "./img/night.svg"; ;
+let timeSrc = weather.IsDayTime ? "./img/fireday.gif" : "./img/firenight.gif"; ;
 
 time.setAttribute('src',timeSrc);
 
@@ -55,12 +55,13 @@ cityForm.addEventListener("submit", (e) => {
     .then((data) => updateUI(data))
     .catch((err) => console.log(err));
 
-
+  //local storage
+  localStorage.setItem("city", city);
 });
 
 
 //forecast api
-const key = "	AdhhTFe6yVKe1CtcV4vKYIAYXizpPjGk";
+const key = "W21dolBVLOiMd59p10y5YhWHrFwzs73W";
 
 // get weather information
 const getWeather = async (id) => {
@@ -88,3 +89,13 @@ const getCity = async (city) => {
 // getcity('delhi')
 //     .then(data =>{return getWeather(data.Key);}).then(data =>{console.log(data);})
 //     .catch(err=>console.log(err));
+
+
+if (localStorage.getItem("city")) {
+  updateCity(localStorage.getItem("city"))
+    .then((data) => updateUI(data))
+    .catch((err) => console.log(err));
+}
+
+
+ 

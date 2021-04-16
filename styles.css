@@ -1,23 +1,39 @@
-body{
- background-color: #000000;
-background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+body {
+ background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
   letter-spacing: 0.2em;
-  font-size: 0.8em; 
+  font-size: 0.8em;
   height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
-.container{
-  max-width: 400px;
+.container {
+  max-width: 960px;
 }
-.icon{
+.icon {
   position: relative;
   top: -50px;
   border-radius: 50%;
   width: 100px;
   margin-bottom: -50px;
 }
-label{
+label {
   margin-bottom: 5px;
 }
+
+
