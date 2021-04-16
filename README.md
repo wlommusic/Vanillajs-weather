@@ -1,3 +1,3 @@
 # Vanillajs-weather
 
-(site live)[https://vanillajsweather.netlify.app]
+site live [here](https://vanillajsweather.netlify.app)
